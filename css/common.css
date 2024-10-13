@@ -85,8 +85,9 @@ li.item ul li {
 
 .gallery-img {
   display: block;
-  max-width: 360px;
-  max-height: 300px;
+  width: 360px;
+  height: 300px;
+  object-fit: cover;
 }
 
 input {
