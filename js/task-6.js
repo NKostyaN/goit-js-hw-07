@@ -24,13 +24,14 @@ function createBoxes(amount) {
   return markupString;
 }
 
+function destroyBoxes() {
+  boxesEl.innerHTML = '';
+}
+
 function createBtnOnClick() {
   if (inputEl.value >= 1 && inputEl.value <= 100) {
+    destroyBoxes();
     boxesEl.insertAdjacentHTML('beforeend', createBoxes(inputEl.value));
     inputEl.value = '';
   }
-}
-
-function destroyBoxes() {
-  boxesEl.innerHTML = '';
 }
